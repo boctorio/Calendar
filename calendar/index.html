@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>全网比赛日历</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body background="https://boctorio.com/images/background.png">
+    <div class="container">
+        <div class="title">
+            <h1>全网比赛日历</h1>
+        </div>
+        <div id="details"></div>
+        <div class="shadow">
+            <div class="col-12">
+                <div class="calendar-title">
+                    <div class="last-month" id="last-month" >
+                        <div class="month-pos">
+                            <a href="#" onclick="last_seven_days()" readonly>< 前七天</a>
+                        </div>
+                    </div>
+                    <div id="date" class="date"></div>
+                    <div class="next-month" id="next-month">
+                        <div class="month-pos">
+                            <a href="#" onclick="next_seven_days()" readonly>后七天 ></a>
+                        </div>
+                    </div>
+                </div>
+                <table class="table-bordered" frame="void">
+                    <thead>
+                        <tr class="week" id="week">
+                        </tr>
+                    </thead>
+                    <tbody id="main"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

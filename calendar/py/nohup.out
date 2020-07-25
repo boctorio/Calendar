@@ -1,0 +1,698 @@
+Traceback (most recent call last):
+  File "Union.py", line 35, in <module>
+    s+='"'+s+'":'+json.dumps(c[s],ensure_ascii=False)
+KeyError: 'end_time,'
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f110321bd30>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f110321bd30>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f110321bd30>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fdf73675b38>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fdf73675b38>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fdf73675b38>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f871a8c4358>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f871a8c4358>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-upcoming.py", line 21, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f871a8c4358>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3687db4d30>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3687db4d30>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3687db4d30>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fcab0f9a2e8>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcab0f9a2e8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcab0f9a2e8>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/python3/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 401, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 808, in __init__
+    self.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 1061, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 683, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:748)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='codeforces.com', port=443): Max retries exceeded with url: /api/contest.list (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:748)'),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./codeforces.py", line 5, in <module>
+    response = requests.get('https://codeforces.com/api/contest.list')
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='codeforces.com', port=443): Max retries exceeded with url: /api/contest.list (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:748)'),))
+Traceback (most recent call last):
+  File "./luogu.py", line 11, in <module>
+    data = req.json()['currentData']['contests']['result']
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/models.py", line 898, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/python3/lib/python3.6/socket.py", line 743, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f6cd977bb38>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6cd977bb38>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='atcoder.jp', port=443): Max retries exceeded with url: /contests/archive?page=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6cd977bb38>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 401, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 808, in __init__
+    self.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 1061, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 683, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 401, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 808, in __init__
+    self.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 1061, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 683, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./atcoder-recent.py", line 27, in <module>
+    req = requests.get(url)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 401, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 808, in __init__
+    self.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 1061, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 683, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context,
+  File "/usr/local/python3/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 401, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 808, in __init__
+    self.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 1061, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/python3/lib/python3.6/ssl.py", line 683, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./luogu.py", line 9, in <module>
+    req = requests.get(url,headers=headers)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./codeforces.py", line 8, in <module>
+    data = json.loads(response.text)
+  File "/usr/local/python3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  File "RunForContests", line 4
+    files=./*.py
+          ^
+SyntaxError: invalid syntax
