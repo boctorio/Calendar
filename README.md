@@ -143,19 +143,19 @@ f.close()
 
 1. 进入检查界面：
 
-   ![](step1.png)
+   ![](/readme/step1.png)
 
 2. 利用浏览器的元素获取指针获取到想要的元素对应的位置，此时会在element界面显示出选中的元素的位置：
 
-   ![](step2.png)
+   ![](/readme/step2.png)
 
 3. 找到需要的元素，右键进行如下操作，此时就可以将选择器信息复制到粘贴板，在本例中，我们需要的是\<td>元素：
 
-   ![](step3.png)
+   ![](/readme/step3.png)
 
 动图如下：
 
-![](step.mp4)
+![](/readme/step.mp4)
 
 在点击完copy selecter后，我们的粘贴板会得到如下信息：
 
@@ -191,7 +191,7 @@ Main.js主要用来处理json文件数据，并将该数据传到index.html中�
 
 因此我们首先要计算出当天的日期，根据当天日期的前后日期以及对应的星期几，这里对应的函数为load_head()：
 
-![](table.png)
+![](/readme/table.png)
 
 2. 初始化日期对应数组。
 
