@@ -153,9 +153,6 @@ f.close()
 
    ![](/readme/step3.png)
 
-动图如下：
-
-![](/readme/step.mp4)
 
 在点击完copy selecter后，我们的粘贴板会得到如下信息：
 
